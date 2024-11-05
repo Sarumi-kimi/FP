@@ -1,0 +1,169 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    //1.
+    int A, B, C;
+    cout << "Ingresa el primer número: ";
+    cin >> A;
+    cout << "Ingresa el segundo número: ";
+    cin >> B;
+    cout << "Ingresa el tercer número: ";
+    cin >> C;
+    int maximo = A;
+    if (B > maximo) 
+    {
+        maximo = B;
+    }
+    if (C > maximo)
+    {
+        maximo = C;
+    }
+    cout << "El número más grande es: " << maximo << endl;
+
+    //2.
+    using System;
+
+    class Program
+    {
+        static void Main()
+        {
+      
+            Console.Write("Ingresa el primer número (A): ");
+            int A = int.Parse(Console.ReadLine());
+            Console.Write("Ingresa el segundo número (B): ");
+            int B = int.Parse(Console.ReadLine());
+            Console.Write("Ingresa el tercer número (C): ");
+            int C = int.Parse(Console.ReadLine());
+            int maximo, minimo;
+            if (A > B)
+            {
+                maximo = A;
+                minimo = B;
+            }
+            else
+            {
+                maximo = B;
+                minimo = A;
+            }
+            if (C > maximo)
+            {
+                maximo = C;
+            }
+            if (C < minimo)
+            {
+                minimo = C;
+            }
+            Console.WriteLine("El valor máximo es: " + maximo);
+            Console.WriteLine("El valor mínimo es: " + minimo);
+
+          //3.
+            int horas, minutos, segundos;
+            cout << "Ingresa las horas (HH): ";
+            cin >> horas;
+            cout << "Ingresa los minutos (MM): ";
+            cin >> minutos;
+            cout << "Ingresa los segundos (SS): ";
+            cin >> segundos;
+            segundos++;
+            if (segundos == 60) 
+            {
+                segundos = 0;
+                minutos++;
+            }
+            if (minutos == 60)
+            {
+                minutos = 0;
+                horas++;
+            }
+            if (horas == 24) 
+            {
+                horas = 0;
+            }
+            cout << "La hora dentro de un segundo es: "
+                << setw(2) << setfill('0') << horas << ":"
+                << setw(2) << setfill('0') << minutos << ":"
+                << setw(2) << setfill('0') << segundos << endl;
+
+            //4.
+            double distancia;
+            int diasEstancia;
+            const double precioPorKm = 2.5;
+            double precioTotal;
+            cout << "Ingresa la distancia a recorrer en km: ";
+            cin >> distancia;
+            cout << "Ingresa el número de días de estancia: ";
+            cin >> diasEstancia;
+            precioTotal = distancia * precioPorKm * 2;
+            if (diasEstancia > 7 && distancia > 800) 
+            {
+                precioTotal *= 0.7;  
+            }
+            cout << "El precio del boleto de ida y vuelta es: $" << precioTotal << endl;
+
+            //5.
+            //a)
+            int angulo;
+            cout << "Ingresa el ángulo en grados: ";
+            cin >> angulo;
+            if (angulo == 90)
+            {
+                cout << "El ángulo es un ángulo recto" << endl;
+            }
+            else 
+            {
+                cout << "El ángulo no es un ángulo recto" << endl;
+            }
+            //b)
+            double temperatura;
+            cout << "Ingresa la temperatura en grados: ";
+            cin >> temperatura;
+            if (temperatura > 100)
+            {
+                cout << "Por encima del punto de ebullición del agua" << endl;
+            }
+            else
+            {
+                cout << "Por debajo del punto de ebullición del agua" << endl;
+            }
+            //c)
+            int numero, totalPositivos = 0, totalNegativos = 0;
+            cout << "Ingresa un número: ";
+            cin >> numero;
+            if (numero > 0) 
+            {
+                totalPositivos += numero;  
+            }
+            else 
+            {
+                totalNegativos += numero; 
+            }
+            cout << "Total de positivos: " << totalPositivos << endl;
+            cout << "Total de negativos: " << totalNegativos << endl;
+            //d)
+            int x, y, z;
+            cout << "Ingresa el valor de x: ";
+            cin >> x;
+            cout << "Ingresa el valor de y: ";
+            cin >> y;
+            cout << "Ingresa el valor de z: ";
+            cin >> z;
+            if (x > y && z < y)
+            {
+                cout << "x: " << x << endl;
+            }
+            //e)
+            int distancia;
+            cout << "Ingresa la distancia: ";
+            cin >> distancia;
+            if (distancia > 20 && distancia < 35)
+            {
+                int tiempo;
+                cout << "Ingresa el valor de tiempo: ";
+                cin >> tiempo;
+                cout << "Tiempo ingresado: " << tiempo << endl;
+            }
+            return 0;
+}
